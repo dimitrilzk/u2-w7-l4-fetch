@@ -15,23 +15,23 @@ app.get("/hello", (req, res) => {
 });
 
 app.get("/fantasy", (req, res) => {
-  res.send(require("./fantasy.json"));
+  res.send(fantasy);
 });
 
 app.get("/history", (req, res) => {
-  res.send(require("./history.json"));
+  res.send(history);
 });
 
 app.get("/horror", (req, res) => {
-  res.send(require("./horror.json"));
+  res.send(horror);
 });
 
 app.get("/romance", (req, res) => {
-  res.send(require("./romance.json"));
+  res.send(romance);
 });
 
 app.get("/scifi", (req, res) => {
-  res.send(require("./scifi.json"));
+  res.send(scifi);
 });
 
 app.listen(port, () => {
